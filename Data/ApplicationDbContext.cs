@@ -9,13 +9,14 @@ namespace QLNH.Data {
     public class ApplicationDbContext : DbContext {
         public DbSet<User> User { get; set; }
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
             Database.EnsureCreated();
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder) {
-            {
-                base.OnModelCreating(modelBuilder);
-            }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
