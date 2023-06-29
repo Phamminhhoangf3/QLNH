@@ -8,6 +8,7 @@ using QLNH.Models;
 namespace QLNH.Data {
     public class ApplicationDbContext : DbContext {
         public DbSet<User> User { get; set; }
+        public DbSet<Items> Items { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
