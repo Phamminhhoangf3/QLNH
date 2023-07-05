@@ -16,7 +16,7 @@ namespace QLNH.Controllers {
             _context = context;
         }
         [HttpGet]
-        public IEnumerable<Order> Get() 
+        public IEnumerable<Category> Get() 
         {
             return _context.Category.ToList();
         }

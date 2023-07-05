@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace QLNH_APIs.Models {
+namespace QLNH.Models {
     public class Status {
         [Key]
         public int Id { get; set; }
